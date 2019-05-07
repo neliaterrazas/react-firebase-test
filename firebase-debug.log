@@ -1,0 +1,31 @@
+[debug] [2019-05-07T23:35:46.692Z] ----------------------------------------------------------------------
+[debug] [2019-05-07T23:35:46.694Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting:uno
+[debug] [2019-05-07T23:35:46.694Z] CLI Version:   6.9.0
+[debug] [2019-05-07T23:35:46.694Z] Platform:      darwin
+[debug] [2019-05-07T23:35:46.695Z] Node Version:  v8.12.0
+[debug] [2019-05-07T23:35:46.695Z] Time:          Tue May 07 2019 16:35:46 GMT-0700 (PDT)
+[debug] [2019-05-07T23:35:46.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-07T23:35:46.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-07T23:35:46.704Z] > authorizing via signed-in user
+[debug] [2019-05-07T23:35:46.705Z] [iam] checking project authentication-50c6a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-05-07T23:35:46.707Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-50c6a:testIamPermissions  
+
+[debug] [2019-05-07T23:35:46.874Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-07T23:35:46.876Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/authentication-50c6a  
+ 
+[debug] [2019-05-07T23:35:47.025Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'authentication-50c6a'...
+[info] 
+[info] i  deploying hosting
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/authentication-50c6a/overview
+[debug] [2019-05-07T23:35:47.079Z] TypeError: Cannot read property 'deploys' of undefined
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:88:36
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:229:7)
+[error] 
+[error] Error: An unexpected error has occurred.
